@@ -1,0 +1,7 @@
+[alias]
+	aa = add --all :/
+[user]
+	email = amwright.dev@gmail.com
+	name = pies-n-loaf
+[init]
+	defaultBranch = main
