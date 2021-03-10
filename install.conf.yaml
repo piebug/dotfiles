@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true  # removes existing versions of the files, even if they aren't symlinks
+
+- clean: ['~']  # only removes dead symlinks
+
+- link:
+    ~/.alias: 
+    ~/.bashrc: 
+    ~/.bashrc.oh-my-bash: 
+    ~/.function: 
+    ~/.gitconfig: 
+    ~/AppData/Roaming/Hyper/.hyper.js:
+      if: 'hyper version'  # check that hyper is installed 
+      path: apps/hyper.js
+
+# updates the dotfile submodule/repo as part of the install process
+# - shell:
+#   - [git submodule update --init --recursive, Installing submodules]
