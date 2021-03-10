@@ -1,4 +1,8 @@
-# Create a new directory and enter it:
+# Shell Functions |
+# ----------------+
+
+# Create a new directory and enter it
+# syntax: mkcd test_dir
 function mkcd() {
 	mkdir -p "$@" && cd "$@";
 }

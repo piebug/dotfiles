@@ -1,8 +1,8 @@
 [alias]
 	aa = add --all :/
 	cm = commit -m
-	# update-submodules = submodule update --init --recursive
-	# upgrade-submodules = submodule update --init --remote
+	update-submodules = submodule update --init --recursive
+	upgrade-submodules = submodule update --init --remote
 [core]
 	excludesfile = ~/.gitignore_global
 [http]

@@ -1,8 +1,11 @@
-# Shell shortcuts:
+# Shell Shortcuts |
+# ----------------+
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias _="sudo"
 alias x="exit"
-alias reload="source ~/.bash_profile"
+alias reload="source ~/.bashrc"
+alias reload_profile="source ~/.bash_profile"
 alias path='echo -e ${PATH//:/\\n}'  # prints each PATH entry on a separate line

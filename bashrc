@@ -1,3 +1,6 @@
+source ~/.alias
+source ~/.function
+
 # Load oh-my-bash config:
 source ~/.bashrc.oh-my-bash
 
