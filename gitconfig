@@ -3,14 +3,9 @@
 	cm = commit -m
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
-[core]
-	excludesfile = ~/.gitignore_global
 [http]
 	cookieFile = ~/.gitcookies
 [include]
 	path = ~/.gitconfig_local  # allows local .gitconfig overrides
 [init]
 	defaultBranch = main
-[user]
-	email = amwright.dev@gmail.com
-	name = pies-n-loaf
