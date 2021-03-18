@@ -3,6 +3,9 @@
 	cm = commit -m
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
+    latest = "! git co master && git pull && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    wip = "! git add . && git -c commit.gpgsign=false commit -anm \"WIP\""
+    unwip = "! if [ \"$(git log -1 --pretty=%B)\" = \"WIP\" ]; then git reset HEAD^; else echo \"No WIP\"; fi"
 [http]
 	cookieFile = ~/.gitcookies
 [include]
