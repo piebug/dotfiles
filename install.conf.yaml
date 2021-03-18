@@ -16,6 +16,6 @@
       if: 'hyper version'  # check that hyper is installed 
       path: apps/hyper.js
 
-# updates the dotfile submodule/repo as part of the install process
-# - shell:
-#   - [git submodule update --init --recursive, Installing submodules]
+# updates the dotbot submodule/repo as part of the install process
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
