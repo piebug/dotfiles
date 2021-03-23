@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 export DOTFILES_REPO=~/projects/dotfiles
 
 # Load custom shell shortcuts:
