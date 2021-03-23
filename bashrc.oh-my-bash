@@ -3,8 +3,10 @@ export OSH="${DOTFILES_REPO:-~/projects/dotfiles}/oh-my-bash"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-# OSH_THEME="powerline-multiline"
-OSH_THEME="agnoster"
+OSH_THEME="powerline-multiline"  # pretty multiline
+# OSH_THEME="agnoster"  # pretty powerline
+# OSH_THEME="sirup"  # simple
+# OSH_THEME="zork"  # simple multiline
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,3 +102,21 @@ source $OSH/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
+
+# ______________
+# ~*~ COLORS ~*~
+# --------------
+# "powerline-multline" theme overrides:
+if [[ $OSH_THEME == "powerline-multiline" ]] 
+then
+  SCM_THEME_PROMPT_CLEAN_COLOR=96
+  SCM_THEME_PROMPT_DIRTY_COLOR=209
+  SCM_THEME_PROMPT_STAGED_COLOR=30
+  SCM_THEME_PROMPT_UNSTAGED_COLOR=197
+  SCM_THEME_PROMPT_COLOR=${SCM_THEME_PROMPT_CLEAN_COLOR}
+
+  LAST_STATUS_THEME_PROMPT_COLOR=214
+  CWD_THEME_PROMPT_COLOR=60
+  CLOCK_THEME_PROMPT_COLOR=60
+  IN_VIM_THEME_PROMPT_COLOR=26
+fi
