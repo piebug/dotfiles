@@ -6,12 +6,12 @@ module.exports = {
     config: {
       // font family for the theme
       verminal: {
-        fontFamily: '"Hack", monospace',
+        fontFamily: '"Hack", "FiraCode NF", monospace',
         fontSize: 14,
   
         // hyper-night-owl colors
         backgroundColor: "#011627",
-        foregroundColor: "#d6deeb",
+        foregroundColor: "#edf1f7",
         borderColor: "rgba(126, 87, 194, 0.3)",
         cursorColor: "#7e57c2",
         cursorAccentColor: "#ffffff",
