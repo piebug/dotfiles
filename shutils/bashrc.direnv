@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Required setup for direnv (https://direnv.net/) to work on Windows w/ Git Bash
+
+alias direnv="/usr/bin/direnv.windows-amd64.exe"  # C:\Program Files\Git\usr\bin...
+eval "$(direnv hook bash)"
+source ~/.shutils/bash_preexec.sh
+precmd() { source ~/.shutils/fix_direnv.sh ; }
