@@ -7,9 +7,11 @@
 - clean: ['~']  # only removes dead symlinks
 
 - link:
-    ~/.alias: 
-    ~/.bashrc:  
-    ~/.gitconfig: 
+    ~/.alias:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.function:
+    ~/.gitconfig:
 
     # shutils - shell utilities that have dependencies on external tools
     ~/.shutils/.bashrc.direnv:
