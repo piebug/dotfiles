@@ -8,10 +8,24 @@
 
 - link:
     ~/.alias: 
-    ~/.bashrc: 
-    ~/.bashrc.oh-my-bash: 
-    ~/.function: 
+    ~/.bashrc:  
     ~/.gitconfig: 
+
+    # shutils - shell utilities that have dependencies on external tools
+    ~/.shutils/.bashrc.direnv:
+      if: 'test -f /usr/bin/direnv.windows-amd64.exe'
+      path: shutils/bashrc.direnv
+    ~/.shutils/.bashrc.oh-my-bash:
+      if: 'test -f oh-my-bash/oh-my-bash.sh'
+      path: shutils/bashrc.oh-my-bash
+    ~/.shutils/bash_preexec.sh:
+      if: 'test -f /usr/bin/direnv.windows-amd64.exe'
+      path: shutils/bash_preexec.sh
+    ~/.shutils/fix_direnv.sh:
+      if: 'test -f /usr/bin/direnv.windows-amd64.exe'
+      path: shutils/bash_preexec.sh
+
+    # apps - config files for external applications
     ~/AppData/Roaming/Hyper/.hyper.js:
       if: 'hyper version'  # check that hyper is installed 
       path: apps/hyper.js
