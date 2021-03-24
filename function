@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 # ----------------+
 # Shell Functions |
 # ----------------+
@@ -8,3 +7,8 @@
 function mkcd() {
 	mkdir -p "$@" && cd "$@";
 }
+
+# Docker for Windows workaround in git bash:
+# docker() {
+# 	(export MSYS_NO_PATHCONV=1; "docker.exe" "$@")
+# }
