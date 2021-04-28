@@ -15,6 +15,7 @@ My config includes commands and dotfiles for a few utilities that need to be man
 
 - [Hyper](https://hyper.is/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- `direnv`
 
 ```sh
 git submodule add <repo-url>
@@ -37,7 +38,16 @@ command
 - document oh-my-bash dependency and install process
 - fonts!!
 
-## contents
+## file structure
+
+* `/`
+  > The base dir holds the install script and fundamental/universal dotfiles. 
+
+* `/apps` 
+  > Contains config files for external/third-party applications. See [dependencies](#dependencies) to see which apps need to be installed to use these dotfiles.
+
+* `/shutils`
+  > Contains shell scripts that set up third-party CLIs/shell utilities.
 
 ## troubleshooting
 
@@ -52,3 +62,4 @@ Dotbot is configured to only copy over the `hyper.js` file if Hyper is installed
 If `hyper version` runs in the same directory as the `hyper.js` file, it will try to execute `.js` file instead. This obviously dunt do shit. I circumvented this issue by creating the `/apps` folder for app config files (including Hyper). If you are experiencing it now, you somehow ended up with `hyper.js` back in your main directory. Put it back in `/apps`.
 
 ## other things
+`¯\_(ツ)_/¯`
