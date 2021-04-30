@@ -8,6 +8,11 @@ function mkcd() {
 	mkdir -p "$@" && cd "$@";
 }
 
+# Activate a Python version locally and create a virtual environment for said version
+function pyenv-venv() {
+    pyenv local "$@" && $PYENV_HOME/versions/"$@"/python.exe -m venv .venv;
+}
+
 # Docker for Windows workaround in git bash:
 # docker() {
 # 	(export MSYS_NO_PATHCONV=1; "docker.exe" "$@")
