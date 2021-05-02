@@ -22,7 +22,7 @@ echo "Checking PATH variables..."
 # pyenv-win
 if [ -d $PYENV_HOME/bin ];
 then
-    export PATH="$PYENV_HOME/bin:$PATH"  # TODO 
+    export PATH=$PYENV_HOME/bin:$PATH
     eval "$(pyenv init -)"
     echo "Added pyenv-win to PATH"
 else
