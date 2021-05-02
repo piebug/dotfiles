@@ -46,7 +46,7 @@ My config includes dotfiles and commands for a few utilities that need to be man
 - `pyenv`/`pyenv-win` (and Python by extension)
 - [PostgreSQL]()
 
-Strictly speaking, none of these tools are _necessary_ - and not having them installed should not prevent you from installing the rest of the dotfiles and taking advantage of their base functionality. Having them just makes my workplace setup feel more complete.
+Strictly speaking, none of these tools are _necessary_ - and not having them installed should not prevent you from installing the rest of the dotfiles and taking advantage of their base functionality. They just make my workplace setup feel more complete.
 
 Other tools I often like to install but aren't managed by dotfiles (maybe I'll set up an auto-installer someday):
 
@@ -73,8 +73,10 @@ If `hyper version` runs in the same directory as the `hyper.js` file, it will tr
 
 ## resources
 
-* What are dotfiles?
-
+* https://dotfiles.github.io/, a compendium.
+* [Getting Started with Dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789), a good overview/introduction. Answers the question "What are dotfiles?"
+* [Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/), from the creator of Dotbot. Their blog was helpful when I was getting started.
+* 
 
 ## other things
 `¯\_(ツ)_/¯`
