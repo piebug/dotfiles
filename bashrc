@@ -6,13 +6,22 @@ source ~/.alias
 source ~/.function
 
 export DOTFILES_REPO=~/projects/dotfiles
-export PYENV_HOME=~/.pyenv/pyenv-win
 
 # Set up PATH for common tools:
+export PYENV_HOME=~/.pyenv/pyenv-win
 export HYPER_VERSION=3.0.2
 export PSQL_VERSION=13
 
 echo "Checking PATH variables..."
+# pyenv-win
+if [ -d $PYENV_HOME/bin ];
+then
+    export PATH="$PYENV_HOME/bin:$PATH"  # TODO 
+    eval "$(pyenv init -)"
+    echo "Added pyenv-win to PATH"
+else
+    echo "pyenv-win not found"
+fi
 # Hyper CLI:
 if ! hyper version;
 then
