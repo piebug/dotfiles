@@ -40,9 +40,12 @@ If anything goes wrong with the install, reference the [troubleshooting](#troubl
 My config includes dotfiles and commands for a few utilities that need to be manually installed (at least until I decide to figure out how to make it automatic):
 
 - [Hyper](https://hyper.is/) - with [Git Bash](https://git-scm.com/downloads) as the terminal backend for Windows
+
 - [Visual Studio Code](https://code.visualstudio.com/)
+
 - `direnv` - for managing environment variables on certain projects (mostly related to work)
   - Installing this on Windows involved downloading the executable and placing it in the Git Bash `/bin` so that it would be recognized. You can download that file here (and I am thinking about including it in this repo as well) ==TODO==
+
 - `pyenv`/[`pyenv-win`](https://github.com/pyenv-win/pyenv-win) (and Python by extension)
   - I installed this with [Chocolatey](https://chocolatey.org/install): `choco install pyenv-win`
   - Manually and annoyingly updated with:
@@ -50,6 +53,7 @@ My config includes dotfiles and commands for a few utilities that need to be man
   cd ~/.pyenv
   git restore pyenv-win/.versions_cache.xml && git pull
   ```
+
 - [PostgreSQL](https://www.postgresqltutorial.com/install-postgresql/)
 
 Strictly speaking, none of these tools are _necessary_ - and not having them installed should not prevent you from installing the rest of the dotfiles and taking advantage of their base functionality. They just make my workplace setup feel more complete.
