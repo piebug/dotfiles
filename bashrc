@@ -12,7 +12,13 @@ export PYENV_HOME=~/.pyenv/pyenv-win
 export HYPER_VERSION=3.0.2
 export PSQL_VERSION=13
 
+# NOTE - all environment variables should be exported above ^^^
+# Source any local bash settings (including env var overrides):
+test -f ~/.bashrc_local && source ~/.bashrc_local
+
+# Set up PATH for common tools:
 echo "Checking PATH variables..."
+
 # pyenv-win
 if [ -d $PYENV_HOME/bin ];
 then
@@ -60,11 +66,6 @@ fi
 # export PATH=$PATH:/c/TDM-GCC-64/bin
 
 test -f ~/.shutils/.bashrc.direnv && source ~/.shutils/.bashrc.direnv
-
-# -- END ^
-
-# Source any local bash settings:
-test -f ~/.bashrc_local && source ~/.bashrc_local
 
 # Load oh-my-bash config:
 # (doing this last so any env var updates from local are caught
