@@ -48,7 +48,8 @@ My config includes dotfiles and commands for a few utilities that need to be man
 
 - `pyenv`/[`pyenv-win`](https://github.com/pyenv-win/pyenv-win) (and Python by extension)
   - I installed this with [Chocolatey](https://chocolatey.org/install): `choco install pyenv-win`
-  - Manually and annoyingly updated with:
+  - Real Python's guide on [Managing Multiple Python Versions with `pyenv`](https://realpython.com/intro-to-pyenv/) is also helpful
+  - Manual and annoying way to update the install:
   ```sh
   cd ~/.pyenv
   git restore pyenv-win/.versions_cache.xml && git pull
@@ -63,11 +64,11 @@ Both Hyper and PSQL have version numbers in their paths. If you've installed a d
 ```sh
 touch ~/.bashrc_local
 echo "# Local overrides for .bashrc config" >> ~/.bashrc_local
-export HYPER_VERSION=3.0.2  # or whichever version you have
-export PSQL_VERSION=13      # ex. 11
+echo "export HYPER_VERSION=3.0.2" >> ~/.bashrc_local  # or whichever version you have
+echo "export PSQL_VERSION=13" >> ~/.bashrc_local      # ex. 11
 ```
 
-Other tools I often like to install but aren't managed by dotfiles (still dreaming of having an auto-installer someday):
+Other tools I often like to install but aren't managed by dotfiles (yet - still dreaming of that auto-installer):
 
 - Atom
 - PyCharm
