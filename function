@@ -8,13 +8,24 @@ function mkcd() {
 	mkdir -p "$@" && cd "$@";
 }
 
+# PATH modification functions:
+function path_remove() {
+    PATH=$(echo -n "$PATH" | awk -v RS=: -v ORS=: "\$0 != \"$1\"" | sed 's/:$//')
+}
+function path_append() {
+    path_remove "$1"
+    PATH="${PATH:+"$PATH:"}$1"
+}
+function path_prepend() {
+    path_remove "$1"
+    PATH="$1${PATH:+":$PATH"}"
+}
+
 # Go directly to a specific project directory, or to /Projects itself
 function projects() {
     cd ~/projects/"$@";
 }
-
-# Shorthand for projects()
-function proj() {
+function proj() {  # Shorthand for projects()
     projects "$@";
 }
 
