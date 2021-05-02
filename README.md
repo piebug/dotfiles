@@ -96,7 +96,7 @@ If `hyper version` runs in the same directory as the `hyper.js` file, it will tr
 * https://dotfiles.github.io/, a compendium.
 * [Getting Started with Dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789), a good overview/introduction. Answers the question "What are dotfiles?"
 * [Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/), from the creator of Dotbot. Their blog was helpful when I was getting started.
-* 
 
 ## other things
 `¯\_(ツ)_/¯`
+I'm sure there will be more to come.
