@@ -57,22 +57,7 @@ Other tools I often like to install but aren't managed by dotfiles (maybe I'll s
 - `yarn`
 - `go`
 - `pandoc`
-
 - fonts!!
-
-## file structure
-
-* `/`
-  
-  The base dir holds the install script and fundamental/universal dotfiles. 
-
-* `/apps` 
-  
-  Contains config files for external/third-party applications. See [dependencies](#dependencies) to see which apps need to be installed to use these dotfiles.
-
-* `/shutils`
-  
-  Contains shell scripts that set up third-party CLIs/shell utilities.
 
 ## troubleshooting
 
