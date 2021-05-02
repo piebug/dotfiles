@@ -8,6 +8,16 @@ function mkcd() {
 	mkdir -p "$@" && cd "$@";
 }
 
+# Go directly to a specific project directory, or to /Projects itself
+function projects() {
+    cd ~/projects/"$@";
+}
+
+# Shorthand for projects()
+function proj() {
+    projects "$@";
+}
+
 # Activate a Python version locally and create a virtual environment for said version
 function pyenv-venv() {
     pyenv local "$@" && $PYENV_HOME/versions/"$@"/python.exe -m venv .venv;
